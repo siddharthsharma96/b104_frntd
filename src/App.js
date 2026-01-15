@@ -12,7 +12,9 @@ function App() {
     const fetchRestaurants = async () => {
       setLoading(true);
       try {
-        const response = await fetch("http://localhost:9000/api/v1/restaurant");
+        const response = await fetch(
+          "https://b104backend.onrender.com/api/v1/restaurant"
+        );
         const data = await response.json();
 
         setRestaurantsData(data.data.restaurantdata);

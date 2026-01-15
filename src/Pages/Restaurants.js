@@ -15,11 +15,13 @@ const Restaurants = () => {
       try {
         // const found = restaurantsData.find((res) => res?._id === resId);
         const ress = await fetch(
-          `http://localhost:9000/api/v1/restaurant/${resId}`
+          `https://b104backend.onrender.com/api/v1/restaurant/${resId}`
         );
         const found = await ress.json();
         setRestaurant(found.restaurant);
-        const response = await fetch("http://localhost:9000/api/v1/menu");
+        const response = await fetch(
+          "https://b104backend.onrender.com/api/v1/menu"
+        );
         const data = await response.json();
         setMenu(data.data.menuData);
       } catch (err) {
