@@ -9,7 +9,7 @@ const Home = () => {
     <div className="home">
       <Carousel></Carousel>
       <h2 className="home__heading">
-        Restaurants with online food delivery in Noida
+        Restscjsghcvjsdgvkaurants with online food delivery in Noida
       </h2>
       <div className="home__card-container">
         {loading ? (
